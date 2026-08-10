@@ -594,7 +594,38 @@
       grid-template-columns:1fr;
     }
   }
+/* ---------- EARLIER EXPERIENCE ---------- */
 
+.early-career-list{
+  border-top:1px solid var(--line);
+}
+
+.early-career-item{
+  display:grid;
+  grid-template-columns:230px 1fr;
+  gap:20px;
+  padding:10px 0;
+  border-bottom:1px dashed var(--line);
+  font-size:14.5px;
+}
+
+.early-career-item strong{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:600;
+}
+
+.early-career-item span{
+  color:var(--ink-soft);
+}
+
+@media (max-width:700px){
+  .early-career-item{
+    grid-template-columns:1fr;
+    gap:2px;
+  }
+}
+
+/* ---------- SKILLS ---------- */
   /* ---------- SKILLS ---------- */
 
   .skills-grid{
@@ -647,6 +678,64 @@
   }
 
   /* ---------- EDUCATION / ACADEMIC BACKGROUND ---------- */
+  /* ---------- EDUCATION / ACADEMIC BACKGROUND ---------- */
+
+.edu-grid{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+  gap:40px;
+  align-items:start;
+}
+
+.edu-grid > div{
+  min-width:0;
+}
+
+#education{
+  padding-bottom:100px;
+}
+
+.edu-card p + p{
+  margin-top:12px;
+}
+
+.academic-note{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:12.5px;
+  color:var(--ink-soft);
+  line-height:1.55;
+}
+
+.academic-label{
+  color:var(--accent);
+  font-size:10.5px;
+  letter-spacing:0.06em;
+  margin-right:6px;
+}
+
+.subsection-label{
+  font-size:10.5px;
+  letter-spacing:0.08em;
+  color:var(--accent);
+  margin-bottom:4px;
+}
+
+.awards-label{
+  margin-top:24px;
+}
+
+.cert-list + .subsection-label{
+  margin-top:24px;
+}
+
+@media (max-width:800px){
+  .edu-grid{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+}
 /* ---------- EDUCATION GRID FIX ---------- */
 
 .edu-grid{
@@ -1171,18 +1260,22 @@
 
   <div>
     <span class="fk">Languages</span>
-    <span class="fv">Vietnamese (Native) · English (IELTS 6.5)</span>
+    <span class="fv">
+      Vietnamese (Native) · English (IELTS 6.5, Speaking 7.0, Listening 7.0)
+    </span>
   </div>
 
   <div>
     <span class="fk">Work mode</span>
-    <span class="fv">Remote-ready</span>
+    <span class="fv">
+      Flexible — open to all; prefer Hybrid / Remote
+    </span>
   </div>
 
   <div>
     <span class="fk">Core tools</span>
     <span class="fv">
-      Google Sheets · Looker Studio · Odoo · MS Office
+      Google Sheets · Looker Studio · CRM · OMS · WMS · Odoo · MS Office
     </span>
   </div>
 
@@ -1194,9 +1287,9 @@
   </div>
 
   <div>
-  <span class="fk">Work mode</span>
-  <span class="fv">Flexible — open to all; prefer Hybrid / Remote</span>
-</div>
+    <span class="fk">Availability</span>
+    <span class="fv">Immediate / Open to new roles</span>
+  </div>
 
 </div>
     </div>
@@ -1296,7 +1389,23 @@
             market launch and Malaysia market expansion with senior leadership
             and external stakeholders.
           </li>
+<li>
+  Owned business and demand forecasting for operational planning, aligning
+  expected volume, capacity, inventory, logistics, and stakeholder readiness
+  across seasonal peaks and major campaigns.
+</li>
 
+<li>
+  Led peak-season readiness for major e-commerce campaigns including 9.9,
+  11.11, and 12.12, coordinating capacity planning, warehouse operations,
+  logistics, customer communication, and cross-functional escalation.
+</li>
+
+<li>
+  Monitored operational continuity and contingency readiness during major
+  disruptions, coordinating cross-functional responses to protect service
+  levels and customer experience.
+</li>
         </ul>
 
       </div>
@@ -1445,7 +1554,7 @@
     </div>
 
 
-    <!-- EARLY CAREER -->
+    <!-- EARLIER EXPERIENCE -->
 
 <div class="log-entry">
 
@@ -1457,45 +1566,168 @@
   <div>
 
     <div class="log-role">
-      Early Career Experience
+      Earlier Experience
     </div>
 
-    <div class="log-org">
-      BLACASA · Jaxtina English Center · ACB · Langmaster
+    <div class="early-career-list">
+
+      <div class="early-career-item">
+        <strong>BLACASA.vn</strong>
+        <span>
+          Online Instructor · Excellent Instructor Certificate
+        </span>
+      </div>
+
+      <div class="early-career-item">
+        <strong>Jaxtina English Center</strong>
+        <span>
+          IELTS Teaching Assistant
+        </span>
+      </div>
+
+      <div class="early-career-item">
+        <strong>ACB — Asia Commercial Bank</strong>
+        <span>
+          Corporate Customer Relations
+        </span>
+      </div>
+
+      <div class="early-career-item">
+        <strong>Langmaster</strong>
+        <span>
+          Business Development
+        </span>
+      </div>
+
     </div>
-
-    <ul>
-
-      <li>
-        Earned an <strong>Excellent Instructor Certificate</strong> at
-        BLACASA in November 2020, recognising strong performance and
-        contribution as an online instructor.
-      </li>
-
-      <li>
-        Worked as an <strong>IELTS Teaching Assistant at Jaxtina English
-        Center</strong>, supporting IELTS classes and learners while
-        developing early experience in communication, training support,
-        and learner engagement.
-      </li>
-
-      <li>
-        Earlier experience across corporate customer relations and business
-        development at ACB and Langmaster, building a foundation in client
-        communication, documentation, relationship management, and
-        commercial support.
-      </li>
-
-    </ul>
 
   </div>
 
 </div>
 
+</section>
+
+  <!-- =========================================================
+     OPERATING METRICS
+========================================================= -->
+
+<section id="metrics">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2>Operating metrics</h2>
+      <span class="tag mono">04 — Performance scope</span>
+    </div>
+
+    <div class="metrics-grid">
+
+      <!-- BUSINESS & OPERATIONS -->
+
+      <div class="metric-block">
+
+        <h4>Business &amp; Operations Performance</h4>
+
+        <ul>
+
+          <li>
+            Revenue &amp; sales performance
+          </li>
+
+          <li>
+            Conversion &amp; delivery success rates
+          </li>
+
+          <li>
+            Fast-moving / slow-moving SKU performance
+          </li>
+
+          <li>
+            Inventory health — inbound · outbound · stock · damage
+          </li>
+
+          <li>
+            Warehouse &amp; fulfillment performance by market
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- CUSTOMER & SERVICE -->
+
+      <div class="metric-block">
+
+        <h4>Customer &amp; Service Performance</h4>
+
+        <ul>
+
+          <li>
+            5-minute response rate —
+            <span class="metric-highlight">95%+</span>
+          </li>
+
+          <li>
+            Customer satisfaction / CSAT
+          </li>
+
+          <li>
+            Customer retention / loyalty
+          </li>
+
+          <li>
+            Escalation resolution —
+            <span class="metric-highlight">90% within 12h</span>
+          </li>
+
+          <li>
+            Strategic account review coverage —
+            <span class="metric-highlight">100%</span>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- FORECASTING & RESILIENCE -->
+
+      <div class="metric-block">
+
+        <h4>Forecasting &amp; Operational Resilience</h4>
+
+        <ul>
+
+          <li>
+            Business &amp; demand forecasting
+          </li>
+
+          <li>
+            Peak-season capacity planning
+          </li>
+
+          <li>
+            Campaign readiness — 9.9 · 11.11 · 12.12
+          </li>
+
+          <li>
+            Contingency planning during operational disruptions
+          </li>
+
+          <li>
+            Cross-market operational continuity
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
   </div>
 
 </section>
-
 
 <!-- =========================================================
      PROJECT PORTFOLIO
@@ -1507,7 +1739,7 @@
 
     <div class="section-head">
       <h2>Project portfolio</h2>
-      <span class="tag mono">04 — Selected work</span>
+      <span class="tag mono">05 — Selected work</span>
     </div>
 
 
@@ -1870,83 +2102,181 @@
 <!-- =========================================================
      SKILLS
 ========================================================= -->
+/* ---------- OPERATING METRICS ---------- */
 
+.metrics-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:0;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+
+.metric-block{
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:26px 24px;
+}
+
+.metric-block h4{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.07em;
+  color:var(--accent);
+  margin-bottom:16px;
+}
+
+.metric-block ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.metric-block li{
+  font-size:14px;
+  color:var(--ink);
+  padding:7px 0;
+  border-bottom:1px dashed var(--line);
+}
+
+.metric-block li:last-child{
+  border-bottom:none;
+}
+
+.metric-highlight{
+  font-family:'IBM Plex Mono',monospace;
+  color:var(--accent);
+  font-weight:500;
+}
+
+@media (max-width:800px){
+  .metrics-grid{
+    grid-template-columns:1fr;
+  }
+}
 <section id="skills">
 
   <div class="wrap">
 
     <div class="section-head">
       <h2>Skills &amp; tools</h2>
-      <span class="tag mono">05 — Working toolkit</span>
+      <span class="tag mono">06 — Working toolkit</span>
     </div>
 
 
     <div class="skills-grid">
 
 
-      <div class="skill-block">
+      <div class="skills-grid">
 
-        <h4>Project &amp; Coordination</h4>
+  <!-- PROJECT & COORDINATION -->
 
-        <ul>
-          <li>Project &amp; task coordination</li>
-          <li>SOP &amp; process documentation</li>
-          <li>Cross-functional stakeholder management</li>
-          <li>Market launch &amp; expansion support</li>
-          <li>Vendor / 3PL coordination</li>
-          <li>Programme delivery</li>
-        </ul>
+  <div class="skill-block">
 
-      </div>
+    <h4>Project &amp; Coordination</h4>
 
+    <ul>
 
-      <div class="skill-block">
+      <li>Project &amp; task coordination</li>
 
-        <h4>Reporting &amp; Systems</h4>
+      <li>SOP &amp; process documentation</li>
 
-        <ul>
-          <li>
-            Google Sheets
-            <span class="mono" style="font-size:11px;color:var(--ink-soft);">
-              QUERY / IMPORTRANGE
-            </span>
-          </li>
+      <li>Cross-functional stakeholder management</li>
 
-          <li>Looker Studio</li>
-          <li>Odoo</li>
-          <li>POS Pancake</li>
+      <li>Market launch &amp; operational readiness</li>
 
-          <li>
-            MS Office
-            <span class="mono" style="font-size:11px;color:var(--ink-soft);">
-              MOS
-            </span>
-          </li>
+      <li>Vendor / 3PL coordination</li>
 
-          <li>KPI reporting &amp; performance analysis</li>
-        </ul>
+      <li>Peak-season &amp; contingency planning</li>
 
-      </div>
+    </ul>
+
+  </div>
 
 
-      <div class="skill-block">
+  <!-- DATA & SYSTEMS -->
 
-        <h4>Leadership &amp; Communication</h4>
+  <div class="skill-block">
 
-        <ul>
-          <li>Team leadership — 8–30 staff</li>
-          <li>Cross-functional &amp; stakeholder coordination</li>
-          <li>Cross-time-zone coordination</li>
-          <li>Partner relationship management</li>
-          <li>Business reviews &amp; presentations</li>
-          <li>Training material design</li>
-          <li>English — IELTS 6.5</li>
-        </ul>
+    <h4>Data, Systems &amp; Reporting</h4>
 
-      </div>
+    <ul>
+
+      <li>
+        Google Sheets
+        <span class="mono"
+              style="font-size:11px;color:var(--ink-soft);">
+          Advanced formulas &amp; reporting
+        </span>
+      </li>
+
+      <li>
+        Looker Studio
+      </li>
+
+      <li>
+        CRM · OMS · WMS
+      </li>
+
+      <li>
+        Odoo
+        <span class="mono"
+              style="font-size:11px;color:var(--ink-soft);">
+          ERP
+        </span>
+      </li>
+
+      <li>
+        MS Office
+        <span class="mono"
+              style="font-size:11px;color:var(--ink-soft);">
+          MOS
+        </span>
+      </li>
+
+      <li>
+        KPI dashboards &amp; performance analysis
+      </li>
+
+    </ul>
+
+  </div>
 
 
-    </div>
+  <!-- LEADERSHIP & COMMUNICATION -->
+
+  <div class="skill-block">
+
+    <h4>Leadership &amp; Communication</h4>
+
+    <ul>
+
+      <li>Team leadership — 8–30 staff</li>
+
+      <li>Cross-functional stakeholder coordination</li>
+
+      <li>Cross-time-zone coordination</li>
+
+      <li>Partner relationship management</li>
+
+      <li>Business reviews &amp; presentations</li>
+
+      <li>Training &amp; knowledge transfer</li>
+
+      <li>
+        English —
+        <span class="mono"
+              style="font-size:11px;color:var(--ink-soft);">
+          IELTS 6.5 · Speaking 7.0 · Listening 7.0
+        </span>
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
 
   </div>
 
@@ -1964,7 +2294,7 @@
 
     <span class="section-head tag mono"
           style="display:block; margin-bottom:18px;">
-      06 — Education
+      07 — Education
     </span>
 
     <div class="edu-card">
@@ -1988,11 +2318,11 @@
       </p>
 
       <p>
-        Held leadership roles in student organisations, including
-        <strong>Head of Workshops &amp; Lifestyle Department at NEU BeU Club</strong>
-        and <strong>Head of Organizing Committee for the NBC Fitness Challenge</strong>,
-        coordinating large-scale student events from planning through delivery.
-      </p>
+  Held leadership roles in student organisations, including
+  Head of Workshops &amp; Lifestyle Department at NEU BeU Club and
+  Head of Organizing Committee for the NBC Fitness Challenge,
+  coordinating large-scale student events from planning through delivery.
+</p>
 
       <div class="academic-note">
         <span class="academic-label mono">
@@ -2025,9 +2355,9 @@
     <ul class="cert-list">
 
       <li>
-        <span>IELTS Academic 6.5</span>
-        <span class="cn">IDP Education · 2019</span>
-      </li>
+  <span>IELTS Academic 6.5 · Speaking 7.0 · Listening 7.0</span>
+  <span class="cn">IDP Education · 2022</span>
+</li>
 
       <li>
         <span>Management for Middle Managers (MMM)</span>
@@ -2099,7 +2429,7 @@
   <div class="wrap">
 
     <span class="eyebrow mono">
-      07 — Contact
+      08 — Contact
     </span>
 
     <h2>

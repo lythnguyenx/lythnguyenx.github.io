@@ -624,58 +624,123 @@
     gap:2px;
   }
 }
+/* ---------- OPERATING METRICS ---------- */
 
+.metrics-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  width:100%;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+
+.metric-block{
+  min-width:0;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:26px 24px;
+}
+
+.metric-block h4{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.07em;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+
+.metric-block ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.metric-block li{
+  font-size:14px;
+  color:var(--ink);
+  padding:7px 0;
+  border-bottom:1px dashed var(--line);
+}
+
+.metric-block li:last-child{
+  border-bottom:none;
+}
+
+.metric-highlight{
+  font-family:'IBM Plex Mono',monospace;
+  color:var(--accent);
+  font-weight:500;
+}
+
+@media (max-width:800px){
+  .metrics-grid{
+    grid-template-columns:1fr;
+  }
+}
 /* ---------- SKILLS ---------- */
   /* ---------- SKILLS ---------- */
 
+.skills-grid{
+  width:100%;
+  max-width:none;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+  box-sizing:border-box;
+}
+
+.skill-block{
+  min-width:0;
+  width:auto;
+  box-sizing:border-box;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:26px 24px;
+}
+
+.skill-block h4{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+
+.skill-block ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.skill-block li{
+  font-size:14.5px;
+  color:var(--ink);
+  padding:7px 0;
+  border-bottom:1px dashed var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.skill-block li:last-child{
+  border-bottom:none;
+}
+
+.skill-block li span{
+  flex-shrink:0;
+}
+
+@media (max-width:800px){
   .skills-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:0;
-    border-top:1px solid var(--line);
-    border-left:1px solid var(--line);
+    grid-template-columns:1fr;
   }
-
-  .skill-block{
-    border-right:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    padding:26px 24px;
-  }
-
-  .skill-block h4{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    color:var(--accent);
-    margin-bottom:16px;
-  }
-
-  .skill-block ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-  }
-
-  .skill-block li{
-    font-size:14.5px;
-    color:var(--ink);
-    padding:7px 0;
-    border-bottom:1px dashed var(--line);
-    display:flex;
-    justify-content:space-between;
-    gap:12px;
-  }
-
-  .skill-block li:last-child{
-    border-bottom:none;
-  }
-
-  @media (max-width:800px){
-    .skills-grid{
-      grid-template-columns:1fr;
-    }
-  }
+}
 
   /* ---------- EDUCATION / ACADEMIC BACKGROUND ---------- */
   /* ---------- EDUCATION / ACADEMIC BACKGROUND ---------- */
@@ -740,11 +805,17 @@
 
 .edu-grid{
   display:grid;
-  grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns:1fr 1fr;
   gap:40px;
-  align-items:start;
 }
 
+#education{
+  padding-bottom:120px;
+}
+
+#contact{
+  padding-top:88px;
+}
 .edu-grid > div{
   min-width:0;
 }
@@ -1117,11 +1188,11 @@
 
       <div class="stat">
         <span class="k mono">Team led</span>
-        <span class="v">8–15</span>
+        <span class="v">8–30</span>
       </div>
 
       <div class="stat">
-        <span class="k mono">Experience</span>
+        <span class="k mono">Years of Experience</span>
         <span class="v">4<span>+</span></span>
       </div>
 
@@ -1275,7 +1346,7 @@
   <div>
     <span class="fk">Core tools</span>
     <span class="fv">
-      Google Sheets · Looker Studio · CRM · OMS · WMS · Odoo · MS Office
+      Google Sheets · Looker Studio · CRM · OMS · WMS · Odoo · POS Pancake · MS Office
     </span>
   </div>
 
@@ -2102,59 +2173,7 @@
 <!-- =========================================================
      SKILLS
 ========================================================= -->
-/* ---------- OPERATING METRICS ---------- */
 
-.metrics-grid{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:0;
-  border-top:1px solid var(--line);
-  border-left:1px solid var(--line);
-}
-
-.metric-block{
-  border-right:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  padding:26px 24px;
-}
-
-.metric-block h4{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:0.07em;
-  color:var(--accent);
-  margin-bottom:16px;
-}
-
-.metric-block ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-
-.metric-block li{
-  font-size:14px;
-  color:var(--ink);
-  padding:7px 0;
-  border-bottom:1px dashed var(--line);
-}
-
-.metric-block li:last-child{
-  border-bottom:none;
-}
-
-.metric-highlight{
-  font-family:'IBM Plex Mono',monospace;
-  color:var(--accent);
-  font-weight:500;
-}
-
-@media (max-width:800px){
-  .metrics-grid{
-    grid-template-columns:1fr;
-  }
-}
 <section id="skills">
 
   <div class="wrap">

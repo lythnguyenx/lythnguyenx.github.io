@@ -647,7 +647,25 @@
   }
 
   /* ---------- EDUCATION / ACADEMIC BACKGROUND ---------- */
+/* ---------- EDUCATION GRID FIX ---------- */
 
+.edu-grid{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+  gap:40px;
+  align-items:start;
+}
+
+.edu-grid > div{
+  min-width:0;
+}
+
+@media (max-width:800px){
+  .edu-grid{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+}
 .edu-card p + p{
   margin-top:12px;
 }
@@ -1146,40 +1164,41 @@
 
       <div class="fact-list mono">
 
-        <div>
-          <span class="fk">Based in</span>
-          <span class="fv">Hanoi, Vietnam</span>
-        </div>
+  <div>
+    <span class="fk">Based in</span>
+    <span class="fv">Hanoi, Vietnam</span>
+  </div>
 
-        <div>
-          <span class="fk">Languages</span>
-          <span class="fv">Vietnamese (Native) · English (IELTS 6.5)</span>
-        </div>
+  <div>
+    <span class="fk">Languages</span>
+    <span class="fv">Vietnamese (Native) · English (IELTS 6.5)</span>
+  </div>
 
-        <div>
-          <span class="fk">Availability</span>
-          <span class="fv">Immediate / Open to new roles</span>
-        </div>
+  <div>
+    <span class="fk">Work mode</span>
+    <span class="fv">Remote-ready</span>
+  </div>
 
-        <div>
-          <span class="fk">Work mode</span>
-          <span class="fv">Remote-ready</span>
-        </div>
+  <div>
+    <span class="fk">Core tools</span>
+    <span class="fv">
+      Google Sheets · Looker Studio · Odoo · MS Office
+    </span>
+  </div>
 
-        <div>
-          <span class="fk">Core tools</span>
-          <span class="fv">Google Sheets · Looker Studio · Odoo · MS Office</span>
-        </div>
+  <div>
+    <span class="fk">Focus areas</span>
+    <span class="fv">
+      Project / Programme Coordination · Operations · CX · Agricultural Trade
+    </span>
+  </div>
 
-        <div>
-          <span class="fk">Focus areas</span>
-          <span class="fv">
-            Project / Programme Coordination · Operations · CX · Agricultural Trade
-          </span>
-        </div>
+  <div>
+  <span class="fk">Work mode</span>
+  <span class="fv">On-site · Hybrid · Remote — prefer Hybrid / Remote</span>
+</div>
 
-      </div>
-
+</div>
     </div>
 
   </div>
@@ -1938,142 +1957,135 @@
      EDUCATION & ACADEMIC BACKGROUND
 ========================================================= -->
 
-<section id="education">
+<div class="wrap edu-grid">
 
-  <div class="wrap edu-grid">
+  <!-- LEFT: EDUCATION -->
+  <div>
 
-    <!-- EDUCATION -->
+    <span class="section-head tag mono"
+          style="display:block; margin-bottom:18px;">
+      06 — Education
+    </span>
 
-    <div>
+    <div class="edu-card">
 
-      <span class="section-head tag mono"
-            style="display:block; margin-bottom:18px;">
-        06 — Education
-      </span>
+      <h3>
+        Bachelor of International Economics
+      </h3>
 
-      <div class="edu-card">
-
-        <h3>
-          Bachelor of International Economics
-        </h3>
-
-        <div class="meta">
-          National Economics University (NEU) · 2018–2022 · GPA 3.22/4.0
-        </div>
-
-        <p>
-          Excellent Educational Program (English-taught), with an academic
-          focus on international economics, trade, and cross-border business.
-          Capstone research:
-          <strong>
-            “Natural Rubber Exports from Vietnam to the European Market under
-            EVFTA Implementation.”
-          </strong>
-        </p>
-
-        <p>
-          Held leadership roles in student organisations, including
-          <strong>Head of Workshops &amp; Lifestyle Department at NEU BeU Club</strong>
-          and <strong>Head of Organizing Committee for the NBC Fitness Challenge</strong>,
-          coordinating large-scale student events from planning through delivery.
-        </p>
-
-        <div class="academic-note">
-
-          <span class="academic-label mono">
-            ACADEMIC FOUNDATION
-          </span>
-
-          <span>
-            English-specialized program · Bac Ninh High School for the Gifted ·
-            National Finalist, Internet Olympiad of English (IOE) Vietnam · 2014
-          </span>
-
-        </div>
-
+      <div class="meta">
+        National Economics University (NEU) · 2018–2022 · GPA 3.22/4.0
       </div>
 
-    </div>
+      <p>
+        Excellent Educational Program (English-taught), with an academic
+        focus on international economics, trade, and cross-border business.
+        Capstone research:
+        <strong>
+          “Natural Rubber Exports from Vietnam to the European Market under
+          EVFTA Implementation.”
+        </strong>
+      </p>
 
+      <p>
+        Held leadership roles in student organisations, including
+        <strong>Head of Workshops &amp; Lifestyle Department at NEU BeU Club</strong>
+        and <strong>Head of Organizing Committee for the NBC Fitness Challenge</strong>,
+        coordinating large-scale student events from planning through delivery.
+      </p>
 
-    <!-- CERTIFICATIONS & AWARDS -->
+      <div class="academic-note">
+        <span class="academic-label mono">
+          ACADEMIC FOUNDATION
+        </span>
 
-    <div>
-
-      <span class="section-head tag mono"
-            style="display:block; margin-bottom:18px;">
-        Certifications &amp; recognition
-      </span>
-
-
-      <div class="subsection-label mono">
-        CERTIFICATIONS
+        <span>
+          English-specialized program · Bac Ninh High School for the Gifted ·
+          National Finalist, Internet Olympiad of English (IOE) Vietnam · 2014
+        </span>
       </div>
-
-      <ul class="cert-list">
-
-        <li>
-          <span>IELTS Academic 6.5</span>
-          <span class="cn">IDP Education · 2019</span>
-        </li>
-
-        <li>
-          <span>Management for Middle Managers (MMM)</span>
-          <span class="cn">PTI Education · 2025</span>
-        </li>
-
-        <li>
-          <span>
-            Microsoft Office Specialist — Excel 980/1000,
-            Word 1000/1000
-          </span>
-          <span class="cn">Microsoft · 2022</span>
-        </li>
-
-        <li>
-          <span>Learning Data Analytics: Foundations</span>
-          <span class="cn">NASBA · 2023</span>
-        </li>
-
-      </ul>
-
-
-      <div class="subsection-label mono awards-label">
-        AWARDS &amp; RECOGNITION
-      </div>
-
-      <ul class="cert-list">
-
-        <li>
-          <span>
-            2nd Place — GIP AI Innovation Challenge
-            <span style="color:var(--accent);">
-              (SHIELD Team Lead)
-            </span>
-          </span>
-          <span class="cn">GIP Group · 2026</span>
-        </li>
-
-        <li>
-          <span>Department of Dedication Award</span>
-          <span class="cn">GIP Group · 2026</span>
-        </li>
-
-        <li>
-          <span>Outstanding Employee of the Year</span>
-          <span class="cn">GIP Group · 2024</span>
-        </li>
-
-        <li>
-          <span>Excellent Tutor Certificate</span>
-          <span class="cn">BLACASA.vn · 2020</span>
-        </li>
-
-      </ul>
 
     </div>
 
   </div>
+
+
+  <!-- RIGHT: CERTIFICATIONS + AWARDS -->
+  <div>
+
+    <span class="section-head tag mono"
+          style="display:block; margin-bottom:18px;">
+      Certifications &amp; recognition
+    </span>
+
+    <div class="subsection-label mono">
+      CERTIFICATIONS
+    </div>
+
+    <ul class="cert-list">
+
+      <li>
+        <span>IELTS Academic 6.5</span>
+        <span class="cn">IDP Education · 2019</span>
+      </li>
+
+      <li>
+        <span>Management for Middle Managers (MMM)</span>
+        <span class="cn">PTI Education · 2025</span>
+      </li>
+
+      <li>
+        <span>
+          Microsoft Office Specialist — Excel 980/1000,
+          Word 1000/1000
+        </span>
+        <span class="cn">Microsoft · 2022</span>
+      </li>
+
+      <li>
+        <span>Learning Data Analytics: Foundations</span>
+        <span class="cn">NASBA · 2023</span>
+      </li>
+
+    </ul>
+
+
+    <div class="subsection-label awards-label mono">
+      AWARDS &amp; RECOGNITION
+    </div>
+
+    <ul class="cert-list">
+
+      <li>
+        <span>
+          2nd Place — GIP AI Innovation Challenge
+          <span style="color:var(--accent);">
+            (SHIELD Team Lead)
+          </span>
+        </span>
+        <span class="cn">GIP Group · 2026</span>
+      </li>
+
+      <li>
+        <span>Department of Dedication Award</span>
+        <span class="cn">GIP Group · 2026</span>
+      </li>
+
+      <li>
+        <span>Outstanding Employee of the Year</span>
+        <span class="cn">GIP Group · 2024</span>
+      </li>
+
+      <li>
+        <span>Excellent Tutor Certificate</span>
+        <span class="cn">BLACASA.vn · 2020</span>
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
 
 </section>
 
@@ -2125,18 +2137,20 @@
          href="https://zalo.me/0376563909"
          target="_blank"
          rel="noopener">
-        Zalo — 0376 563 909
+        Zalo — +84 376 563 909
       </a>
 
 
-      <a class="btn btn-ghost"
+      <!-- PRIMARY PHONE -->
+<a class="btn btn-ghost"
    href="tel:+84376563909">
-  Primary — +84 376 563 909
+  Call — +84 376 563 909
 </a>
 
+<!-- SECONDARY PHONE -->
 <a class="btn btn-ghost"
    href="tel:+84989338598">
-  Alternate — +84 989 338 598
+  Call — +84 989 338 598
 </a>
 
 

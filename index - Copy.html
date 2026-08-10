@@ -646,70 +646,42 @@
     }
   }
 
-  /* ---------- EDUCATION ---------- */
+  /* ---------- EDUCATION / ACADEMIC BACKGROUND ---------- */
 
-  .edu-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-  }
+.edu-card p + p{
+  margin-top:12px;
+}
 
-  .edu-card{
-    border-left:2px solid var(--accent);
-    padding-left:20px;
-  }
+.academic-note{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:12.5px;
+  color:var(--ink-soft);
+  line-height:1.55;
+}
 
-  .edu-card h3{
-    font-size:17px;
-    font-weight:600;
-    margin-bottom:4px;
-  }
+.academic-label{
+  color:var(--accent);
+  font-size:10.5px;
+  letter-spacing:0.06em;
+  margin-right:6px;
+}
 
-  .edu-card .meta{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-    margin-bottom:10px;
-  }
+.subsection-label{
+  font-size:10.5px;
+  letter-spacing:0.08em;
+  color:var(--accent);
+  margin-bottom:4px;
+}
 
-  .edu-card p{
-    color:var(--ink-soft);
-    font-size:14.5px;
-    margin:0;
-  }
+.awards-label{
+  margin-top:24px;
+}
 
-  .cert-list{
-    list-style:none;
-    margin:0;
-    padding:0;
-  }
-
-  .cert-list li{
-    display:flex;
-    justify-content:space-between;
-    gap:12px;
-    padding:11px 0;
-    border-bottom:1px solid var(--line);
-    font-size:14.5px;
-  }
-
-  .cert-list li:first-child{
-    padding-top:0;
-  }
-
-  .cert-list .cn{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:11.5px;
-    color:var(--ink-soft);
-    text-align:right;
-  }
-
-  @media (max-width:800px){
-    .edu-grid{
-      grid-template-columns:1fr;
-      gap:32px;
-    }
-  }
+.cert-list + .subsection-label{
+  margin-top:24px;
+}
 
   /* ---------- CONTACT ---------- */
 
@@ -1944,6 +1916,7 @@
 
         <ul>
           <li>Team leadership — 8–30 staff</li>
+          <li>Cross-functional &amp; stakeholder coordination</li>
           <li>Cross-time-zone coordination</li>
           <li>Partner relationship management</li>
           <li>Business reviews &amp; presentations</li>
@@ -1962,13 +1935,14 @@
 
 
 <!-- =========================================================
-     EDUCATION
+     EDUCATION & ACADEMIC BACKGROUND
 ========================================================= -->
 
 <section id="education">
 
   <div class="wrap edu-grid">
 
+    <!-- EDUCATION -->
 
     <div>
 
@@ -1979,24 +1953,50 @@
 
       <div class="edu-card">
 
-        <h3>Bachelor's Degree in International Economics</h3>
+        <h3>
+          Bachelor of International Economics
+        </h3>
 
         <div class="meta">
-          National Economics University (NEU) · 2018–2022 · GPA 3.22/4
+          National Economics University (NEU) · 2018–2022 · GPA 3.22/4.0
         </div>
 
         <p>
-          Excellent Educational Program (English-taught). Academic
-          foundation in international economics, trade, and cross-border
-          business. Leadership experience through university event
-          management and organising committees, including Head of Travel
-          &amp; Lifestyles Department at NEU BeU Club.
+          Excellent Educational Program (English-taught), with an academic
+          focus on international economics, trade, and cross-border business.
+          Capstone research:
+          <strong>
+            “Natural Rubber Exports from Vietnam to the European Market under
+            EVFTA Implementation.”
+          </strong>
         </p>
+
+        <p>
+          Held leadership roles in student organisations, including
+          <strong>Head of Workshops &amp; Lifestyle Department at NEU BeU Club</strong>
+          and <strong>Head of Organizing Committee for the NBC Fitness Challenge</strong>,
+          coordinating large-scale student events from planning through delivery.
+        </p>
+
+        <div class="academic-note">
+
+          <span class="academic-label mono">
+            ACADEMIC FOUNDATION
+          </span>
+
+          <span>
+            English-specialized program · Bac Ninh High School for the Gifted ·
+            National Finalist, Internet Olympiad of English (IOE) Vietnam · 2014
+          </span>
+
+        </div>
 
       </div>
 
     </div>
 
+
+    <!-- CERTIFICATIONS & AWARDS -->
 
     <div>
 
@@ -2005,21 +2005,29 @@
         Certifications &amp; recognition
       </span>
 
+
+      <div class="subsection-label mono">
+        CERTIFICATIONS
+      </div>
+
       <ul class="cert-list">
 
         <li>
           <span>IELTS Academic 6.5</span>
-          <span class="cn">Listening 7.0 · Speaking 7.0</span>
+          <span class="cn">IDP Education · 2019</span>
         </li>
 
         <li>
           <span>Management for Middle Managers (MMM)</span>
-          <span class="cn">PTI · 2025</span>
+          <span class="cn">PTI Education · 2025</span>
         </li>
 
         <li>
-          <span>Microsoft Office Specialist (MOS)</span>
-          <span class="cn">Microsoft</span>
+          <span>
+            Microsoft Office Specialist — Excel 980/1000,
+            Word 1000/1000
+          </span>
+          <span class="cn">Microsoft · 2022</span>
         </li>
 
         <li>
@@ -2027,24 +2035,38 @@
           <span class="cn">NASBA · 2023</span>
         </li>
 
+      </ul>
+
+
+      <div class="subsection-label mono awards-label">
+        AWARDS &amp; RECOGNITION
+      </div>
+
+      <ul class="cert-list">
+
         <li>
-          <span>2nd Prize Winner — GIP AI Innovation Challenge</span>
+          <span>
+            2nd Place — GIP AI Innovation Challenge
+            <span style="color:var(--accent);">
+              (SHIELD Team Lead)
+            </span>
+          </span>
           <span class="cn">GIP Group · 2026</span>
         </li>
 
         <li>
           <span>Department of Dedication Award</span>
-          <span class="cn">GIP Group · 2025</span>
+          <span class="cn">GIP Group · 2026</span>
         </li>
 
         <li>
           <span>Outstanding Employee of the Year</span>
-          <span class="cn">GIP Group · 2023</span>
+          <span class="cn">GIP Group · 2024</span>
         </li>
 
         <li>
-          <span>Excellent Instructor Certificate</span>
-          <span class="cn">BLACASA.VN · 2020</span>
+          <span>Excellent Tutor Certificate</span>
+          <span class="cn">BLACASA.vn · 2020</span>
         </li>
 
       </ul>

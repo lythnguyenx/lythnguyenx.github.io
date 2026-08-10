@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thảo Ly Nguyễn — Regional Operations & Project Coordination</title>
+<meta name="description" content="Thảo Ly Nguyễn — Regional Account Management, Customer Success, Operations and Project & Programme Coordination professional based in Hanoi, Vietnam.">
+<meta name="author" content="Thảo Ly Nguyễn">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#16212B;
+    --ink-soft:#4A5760;
+    --paper:#F3F4EF;
+    --paper-alt:#E9EAE3;
+    --card:#FFFFFF;
+    --line:#D7D9D1;
+    --accent:#2E6F5E;
+    --accent-soft:#E3ECE8;
+    --amber:#C97A2B;
+    --amber-soft:#F3E6D6;
+    --radius:2px;
+    --max:1120px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{
+    scroll-behavior:smooth;
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,h4{
+    font-family:'Space Grotesk', sans-serif;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+  }
+
+  a{
+    color:inherit;
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  ::selection{
+    background:var(--accent);
+    color:#fff;
+  }
+
+  a:focus-visible,
+  button:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+  }
+
+  /* ---------- TOP BAR ---------- */
+
+  .topbar{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(243,244,239,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 32px;
+    max-width:var(--max);
+    margin:0 auto;
+  }
+
+  .nav-id{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+  }
+
+  .nav-id .name{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:15px;
+  }
+
+  .nav-id .status{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.04em;
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-top:4px;
+  }
+
+  .dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--accent);
+    box-shadow:0 0 0 3px var(--accent-soft);
+    flex-shrink:0;
+  }
+
+  .nav-links{
+    display:flex;
+    gap:28px;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  .nav-links a{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    text-decoration:none;
+    color:var(--ink-soft);
+    border-bottom:1px solid transparent;
+    padding-bottom:2px;
+    transition:color .15s, border-color .15s;
+  }
+
+  .nav-links a:hover{
+    color:var(--ink);
+    border-color:var(--ink);
+  }
+
+  @media (max-width:760px){
+    .nav-links{
+      display:none;
+    }
+  }
+
+  /* ---------- HERO ---------- */
+
+  .hero{
+    padding:88px 0 40px;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--accent);
+    margin-bottom:18px;
+    display:block;
+  }
+
+  .hero h1{
+    font-size:clamp(40px, 6vw, 68px);
+    font-weight:700;
+    color:var(--ink);
+  }
+
+  .hero .role{
+    font-size:clamp(17px,2.4vw,21px);
+    color:var(--ink-soft);
+    margin-top:14px;
+    max-width:760px;
+    font-weight:400;
+  }
+
+  .hero .lede{
+    margin-top:22px;
+    max-width:760px;
+    font-size:16px;
+    color:var(--ink-soft);
+  }
+
+  .hero-cta{
+    display:flex;
+    gap:14px;
+    margin-top:32px;
+    flex-wrap:wrap;
+  }
+
+  .btn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    padding:12px 20px;
+    border-radius:var(--radius);
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    border:1px solid var(--ink);
+    transition:background .15s, color .15s, border-color .15s;
+    cursor:pointer;
+    background:none;
+  }
+
+  .btn-solid{
+    background:var(--ink);
+    color:var(--paper);
+  }
+
+  .btn-solid:hover{
+    background:var(--accent);
+    border-color:var(--accent);
+  }
+
+  .btn-ghost{
+    color:var(--ink);
+    background:transparent;
+  }
+
+  .btn-ghost:hover{
+    background:var(--ink);
+    color:var(--paper);
+  }
+
+  /* ---------- STATS ---------- */
+
+  .stat-panel{
+    margin-top:56px;
+    border:1px solid var(--line);
+    background:var(--card);
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+  }
+
+  .stat-panel .stat{
+    padding:22px 18px;
+    border-right:1px solid var(--line);
+    position:relative;
+  }
+
+  .stat-panel .stat:last-child{
+    border-right:none;
+  }
+
+  .stat .k{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.07em;
+    color:var(--ink-soft);
+    display:block;
+    margin-bottom:10px;
+  }
+
+  .stat .v{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:clamp(20px,2.4vw,28px);
+    color:var(--ink);
+    line-height:1.1;
+  }
+
+  .stat .v span{
+    font-size:13px;
+    font-weight:500;
+    color:var(--accent);
+    margin-left:2px;
+  }
+
+  @media (max-width:900px){
+    .stat-panel{
+      grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat-panel .stat:nth-child(2n){
+      border-right:none;
+    }
+
+    .stat-panel .stat{
+      border-bottom:1px solid var(--line);
+    }
+  }
+
+  /* ---------- GENERAL SECTIONS ---------- */
+
+  section{
+    padding:76px 0;
+  }
+
+  section + section{
+    border-top:1px solid var(--line);
+  }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:36px;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .section-head h2{
+    font-size:clamp(24px,3vw,32px);
+  }
+
+  .section-head .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- HIGHLIGHTS ---------- */
+
+  .highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+  }
+
+  .highlight-card{
+    border:1px solid var(--line);
+    background:var(--card);
+    padding:22px 20px;
+  }
+
+  .highlight-card .highlight-number{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--accent);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    margin-bottom:12px;
+  }
+
+  .highlight-card h3{
+    font-size:17px;
+    margin-bottom:8px;
+  }
+
+  .highlight-card p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:14px;
+  }
+
+  @media (max-width:900px){
+    .highlight-grid{
+      grid-template-columns:repeat(2,1fr);
+    }
+  }
+
+  @media (max-width:600px){
+    .highlight-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
+  /* ---------- ABOUT ---------- */
+
+  .about-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr;
+    gap:56px;
+  }
+
+  .about-grid p{
+    color:var(--ink-soft);
+    font-size:16px;
+    max-width:64ch;
+  }
+
+  .about-grid p + p{
+    margin-top:16px;
+  }
+
+  .fact-list{
+    border-top:1px solid var(--line);
+  }
+
+  .fact-list div{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+    gap:16px;
+  }
+
+  .fact-list .fk{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--ink-soft);
+    flex-shrink:0;
+  }
+
+  .fact-list .fv{
+    font-size:14.5px;
+    text-align:right;
+    color:var(--ink);
+  }
+
+  @media (max-width:800px){
+    .about-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
+  /* ---------- EXPERIENCE ---------- */
+
+  .log-entry{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:32px;
+    padding:28px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .log-entry:first-child{
+    padding-top:0;
+  }
+
+  .log-entry:last-child{
+    border-bottom:none;
+  }
+
+  .log-date{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    padding-top:4px;
+  }
+
+  .log-role{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:18px;
+    margin-bottom:2px;
+  }
+
+  .log-org{
+    font-size:14px;
+    color:var(--accent);
+    font-weight:500;
+    margin-bottom:14px;
+  }
+
+  .log-entry ul{
+    margin:0;
+    padding-left:18px;
+    color:var(--ink-soft);
+    font-size:15px;
+  }
+
+  .log-entry li{
+    margin-bottom:7px;
+  }
+
+  .log-entry li:last-child{
+    margin-bottom:0;
+  }
+
+  @media (max-width:700px){
+    .log-entry{
+      grid-template-columns:1fr;
+      gap:6px;
+    }
+  }
+
+  /* ---------- PROJECT FILTER ---------- */
+
+  .filter-row{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:8px;
+  }
+
+  .filter-row button{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    padding:7px 13px;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--ink-soft);
+    border-radius:20px;
+    cursor:pointer;
+    transition:all .15s;
+  }
+
+  .filter-row button.active,
+  .filter-row button:hover{
+    background:var(--ink);
+    color:var(--paper);
+    border-color:var(--ink);
+  }
+
+  .project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:32px;
+  }
+
+  .card{
+    border:1px solid var(--line);
+    background:var(--card);
+    padding:26px 26px 24px;
+    display:flex;
+    flex-direction:column;
+    transition:border-color .15s;
+  }
+
+  .card:hover{
+    border-color:var(--accent);
+  }
+
+  .card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:12px;
+  }
+
+  .card h3{
+    font-size:18px;
+    font-weight:600;
+    max-width:80%;
+  }
+
+  .card-org{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    white-space:nowrap;
+  }
+
+  .card p{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:0 0 16px;
+  }
+
+  .chip-row{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+    margin-top:auto;
+  }
+
+  .chip{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    padding:4px 9px;
+    background:var(--accent-soft);
+    color:var(--accent);
+    border-radius:20px;
+  }
+
+  .chip.amber{
+    background:var(--amber-soft);
+    color:var(--amber);
+  }
+
+  @media (max-width:800px){
+    .project-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
+  /* ---------- SKILLS ---------- */
+
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+
+  .skill-block{
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:26px 24px;
+  }
+
+  .skill-block h4{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--accent);
+    margin-bottom:16px;
+  }
+
+  .skill-block ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  .skill-block li{
+    font-size:14.5px;
+    color:var(--ink);
+    padding:7px 0;
+    border-bottom:1px dashed var(--line);
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+  }
+
+  .skill-block li:last-child{
+    border-bottom:none;
+  }
+
+  @media (max-width:800px){
+    .skills-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
+  /* ---------- EDUCATION ---------- */
+
+  .edu-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+  }
+
+  .edu-card{
+    border-left:2px solid var(--accent);
+    padding-left:20px;
+  }
+
+  .edu-card h3{
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:4px;
+  }
+
+  .edu-card .meta{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-bottom:10px;
+  }
+
+  .edu-card p{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:0;
+  }
+
+  .cert-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  .cert-list li{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    padding:11px 0;
+    border-bottom:1px solid var(--line);
+    font-size:14.5px;
+  }
+
+  .cert-list li:first-child{
+    padding-top:0;
+  }
+
+  .cert-list .cn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    text-align:right;
+  }
+
+  @media (max-width:800px){
+    .edu-grid{
+      grid-template-columns:1fr;
+      gap:32px;
+    }
+  }
+
+  /* ---------- CONTACT ---------- */
+
+  .contact{
+    background:var(--ink);
+    color:var(--paper);
+    padding:80px 0 64px;
+    border-top:1px solid var(--line);
+  }
+
+  .contact .eyebrow{
+    color:#8FBDAE;
+  }
+
+  .contact h2{
+    color:#fff;
+    font-size:clamp(28px,4vw,42px);
+    max-width:720px;
+  }
+
+  .contact-sub{
+    color:#B8C2C7;
+    max-width:650px;
+    margin-top:14px;
+  }
+
+  .contact-grid{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:34px;
+  }
+
+  .contact .btn-solid{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+
+  .contact .btn-solid:hover{
+    background:#3d8b74;
+  }
+
+  .contact .btn-ghost{
+    border-color:#4A5760;
+    color:var(--paper);
+  }
+
+  .contact .btn-ghost:hover{
+    background:#fff;
+    color:var(--ink);
+    border-color:#fff;
+  }
+
+  .foot-row{
+    margin-top:56px;
+    padding-top:24px;
+    border-top:1px solid #2A3841;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    color:#7C8A93;
+  }
+
+  /* ---------- TOAST ---------- */
+
+  .toast{
+    position:fixed;
+    bottom:24px;
+    left:50%;
+    transform:translate(-50%,20px);
+    opacity:0;
+    background:var(--ink);
+    color:#fff;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    padding:11px 18px;
+    border-radius:3px;
+    pointer-events:none;
+    transition:all .25s;
+    z-index:100;
+  }
+
+  .toast.show{
+    opacity:1;
+    transform:translate(-50%,0);
+  }
+
+  /* ---------- AWARD BADGE ---------- */
+
+  .badge-row{
+    margin-top:20px;
+  }
+
+  .award-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    border:1px solid var(--amber);
+    background:var(--amber-soft);
+    color:#8A5A1E;
+    padding:9px 16px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.02em;
+  }
+
+  /* ---------- FLAGSHIP PROJECT ---------- */
+
+  .flagship{
+    border:1px solid var(--ink);
+    background:var(--card);
+    margin-bottom:22px;
+    overflow:hidden;
+  }
+
+  .flagship-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:16px;
+    flex-wrap:wrap;
+    padding:28px 28px 20px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .flagship-head .fs-eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--amber);
+    display:block;
+    margin-bottom:8px;
+  }
+
+  .flagship-head h3{
+    font-size:24px;
+    font-weight:700;
+  }
+
+  .flagship-head .fs-sub{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin-top:4px;
+    max-width:56ch;
+  }
+
+  .flagship-award{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    background:var(--ink);
+    color:#fff;
+    padding:9px 14px;
+    white-space:nowrap;
+  }
+
+  .flagship-body{
+    padding:26px 28px 28px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+
+  .flagship-col h4{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+
+  .flagship-col p{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:0;
+  }
+
+  .flagship-metrics{
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-top:6px;
+  }
+
+  .fm{
+    background:var(--card);
+    padding:16px 14px;
+  }
+
+  .fm .fm-v{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:22px;
+    color:var(--ink);
+  }
+
+  .fm .fm-k{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--ink-soft);
+    margin-top:5px;
+    display:block;
+  }
+
+  @media (max-width:800px){
+    .flagship-body{
+      grid-template-columns:1fr;
+    }
+
+    .flagship-metrics{
+      grid-template-columns:repeat(2,1fr);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     TOP NAV
+========================================================= -->
+
+<div class="topbar">
+  <div class="nav">
+
+    <div class="nav-id">
+      <span class="name">Thảo Ly Nguyễn</span>
+      <span class="status">
+        <span class="dot"></span>
+        OPEN TO PROJECT &amp; PROGRAMME COORDINATION
+      </span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="hero">
+  <div class="wrap">
+
+    <span class="eyebrow mono">
+      Regional Operations · Account Management · Project Coordination
+    </span>
+
+    <h1>Thảo Ly Nguyễn</h1>
+
+    <p class="role">
+      I turn cross-border, high-volume operations into structured,
+      measurable delivery — coordinating people, systems, partners,
+      and stakeholders across five Southeast Asian markets.
+    </p>
+
+    <p class="lede">
+      With 4+ years across regional account management, customer success,
+      operations, and programme coordination, I have built the processes,
+      reporting systems, stakeholder routines, and cross-functional
+      initiatives that keep complex work moving. I am now transitioning
+      into dedicated Project Coordinator, Project Officer, and Programme
+      Coordination roles where structured execution and stakeholder
+      management are central to the work.
+    </p>
+
+    <div class="hero-cta">
+
+      <a class="btn btn-solid" href="#projects">
+        View project portfolio
+      </a>
+
+      <a class="btn btn-ghost" href="./Ly_Nguyen_CV.pdf" target="_blank" rel="noopener">
+        View / Download CV
+      </a>
+
+      <a class="btn btn-ghost"
+         href="https://linkedin.com/in/lythnguyenx"
+         target="_blank"
+         rel="noopener">
+        LinkedIn ↗
+      </a>
+
+      <a class="btn btn-ghost" href="#contact">
+        Contact me
+      </a>
+
+    </div>
+
+
+    <div class="stat-panel">
+
+      <div class="stat">
+        <span class="k mono">Markets coordinated</span>
+        <span class="v">5</span>
+      </div>
+
+      <div class="stat">
+        <span class="k mono">Daily order volume</span>
+        <span class="v">15–20<span>k</span></span>
+      </div>
+
+      <div class="stat">
+        <span class="k mono">Active B2B accounts</span>
+        <span class="v">200–300</span>
+      </div>
+
+      <div class="stat">
+        <span class="k mono">Team led</span>
+        <span class="v">8–15</span>
+      </div>
+
+      <div class="stat">
+        <span class="k mono">Experience</span>
+        <span class="v">4<span>+</span></span>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+
+<!-- =========================================================
+     SELECTED HIGHLIGHTS
+========================================================= -->
+
+<section id="highlights">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2>Selected highlights</h2>
+      <span class="tag mono">01 — Snapshot</span>
+    </div>
+
+    <div class="highlight-grid">
+
+      <div class="highlight-card">
+        <div class="highlight-number">01 · Regional scale</div>
+        <h3>5-market operations</h3>
+        <p>
+          Managed regional account and service operations across Vietnam,
+          Philippines, Malaysia, Indonesia, and Thailand.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-number">02 · Market expansion</div>
+        <h3>Indonesia + Malaysia</h3>
+        <p>
+          Supported operational readiness for market launch and expansion,
+          including logistics, warehouse operations, hiring and onboarding.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-number">03 · Project leadership</div>
+        <h3>SHIELD — 2nd Place</h3>
+        <p>
+          Led an AI-enabled logistics dispute-resolution project in the
+          GIP AI Innovation Challenge 2026.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-number">04 · Development exposure</div>
+        <h3>Agriterra + agriculture</h3>
+        <p>
+          Coordinated agricultural stakeholder engagement and supported
+          value-chain research and multi-stakeholder development activities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about">
+
+  <div class="wrap about-grid">
+
+    <div>
+
+      <span class="section-head tag mono"
+            style="display:block; margin-bottom:18px;">
+        02 — About
+      </span>
+
+      <h2 style="margin-bottom:18px;">
+        Regional operator with a project mindset.
+      </h2>
+
+      <p>
+        I have spent the last 4+ years working across account management,
+        customer success, operations, and programme coordination. In my
+        current regional role, I manage strategic B2B relationships and
+        coordinate service delivery across Vietnam, the Philippines,
+        Malaysia, Indonesia, and Thailand — connecting commercial,
+        operations, logistics, technology, warehouse, finance, and sales
+        stakeholders.
+      </p>
+
+      <p>
+        My work increasingly sits beyond day-to-day account management:
+        I build SOPs and service frameworks, develop KPI reporting,
+        coordinate system improvements, support market expansion,
+        facilitate business reviews, and lead cross-functional initiatives.
+        This has given me a practical foundation in planning, stakeholder
+        alignment, execution, documentation, and problem-solving under
+        live operational pressure.
+      </p>
+
+      <p>
+        Earlier experience at Hedge Academy and Agriterra gave me exposure
+        to programme delivery, international coordination, agricultural
+        value-chain research, and multi-stakeholder engagement. At Agriterra,
+        I worked with Vietnamese agricultural cooperatives and the
+        organisation's Netherlands headquarters, and supported a
+        multi-stakeholder workshop involving Vietnam's Ministry of
+        Agriculture and De Heus.
+      </p>
+
+      <p>
+        I am now looking to move into dedicated Project Coordinator,
+        Project Officer, Programme Coordinator, or PM support roles —
+        particularly where cross-functional execution, stakeholder
+        management, international collaboration, and emerging-market
+        development intersect.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <div class="fact-list mono">
+
+        <div>
+          <span class="fk">Based in</span>
+          <span class="fv">Hanoi, Vietnam</span>
+        </div>
+
+        <div>
+          <span class="fk">Languages</span>
+          <span class="fv">Vietnamese (Native) · English (IELTS 6.5)</span>
+        </div>
+
+        <div>
+          <span class="fk">Availability</span>
+          <span class="fv">Immediate / Open to new roles</span>
+        </div>
+
+        <div>
+          <span class="fk">Work mode</span>
+          <span class="fv">Remote-ready</span>
+        </div>
+
+        <div>
+          <span class="fk">Core tools</span>
+          <span class="fv">Google Sheets · Looker Studio · Odoo · MS Office</span>
+        </div>
+
+        <div>
+          <span class="fk">Focus areas</span>
+          <span class="fv">
+            Project / Programme Coordination · Operations · CX · Agricultural Trade
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section id="experience">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2>Experience log</h2>
+      <span class="tag mono">03 — Chronological</span>
+    </div>
+
+
+    <!-- GIP CURRENT -->
+
+    <div class="log-entry">
+
+      <div class="log-date mono">
+        JUN 2024 —<br>
+        PRESENT
+      </div>
+
+      <div>
+
+        <div class="log-role">
+          Regional Account Management &amp; Customer Success Team Lead
+        </div>
+
+        <div class="log-org">
+          GIP Group — GIP Fulfillment
+        </div>
+
+        <ul>
+
+          <li>
+            Managed a portfolio of 200–300 active B2B accounts across
+            Vietnam, the Philippines, Malaysia, Indonesia, and Thailand,
+            supporting regional operations processing 15,000–20,000 orders
+            daily while maintaining partner satisfaction and retention above
+            90%, 95% of inquiries within 5 minutes, and 90% of escalations
+            within 12 hours.
+          </li>
+
+          <li>
+            Built and maintained long-term relationships with strategic
+            enterprise and SME partners, serving as the primary point of
+            contact for business reviews, performance discussions, issue
+            resolution, and partnership development.
+          </li>
+
+          <li>
+            Conducted weekly, monthly, and quarterly business reviews,
+            analysing performance trends, identifying improvement
+            opportunities, and aligning stakeholders on service and
+            commercial objectives.
+          </li>
+
+          <li>
+            Participated in commercial discussions, pricing negotiations,
+            contract renewals, and partnership development initiatives with
+            strategic accounts and logistics providers across Southeast Asia.
+          </li>
+
+          <li>
+            Led and coached a team of 8–15 Account Management and Customer
+            Success professionals, supporting performance management,
+            capability development, and service-quality improvement.
+          </li>
+
+          <li>
+            Served as the senior escalation point across Operations,
+            Technology, Warehouse, Finance, Sales, and Logistics, coordinating
+            cross-functional resolution of complex business and operational
+            issues.
+          </li>
+
+          <li>
+            Drove cross-functional initiatives to improve service quality,
+            customer retention, operational efficiency, and partner experience
+            across five Southeast Asian markets.
+          </li>
+
+          <li>
+            Supported the launch and expansion of new markets, coordinating
+            logistics partnerships, warehouse operations, hiring, onboarding,
+            and operational readiness. Key projects included the Indonesia
+            market launch and Malaysia market expansion with senior leadership
+            and external stakeholders.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- GIP OPERATIONS -->
+
+    <div class="log-entry">
+
+      <div class="log-date mono">
+        MAY 2023 —<br>
+        MAY 2024
+      </div>
+
+      <div>
+
+        <div class="log-role">
+          Operations Supervisor
+        </div>
+
+        <div class="log-org">
+          GIP Group
+        </div>
+
+        <ul>
+
+          <li>
+            Managed operational execution across a workforce of 30–50
+            employees spanning Customer Service, Telesales, and Warehouse
+            functions across multiple Southeast Asian markets.
+          </li>
+
+          <li>
+            Coordinated daily regional operations, monitored SLA compliance,
+            maintained performance reporting, and identified process
+            improvements to strengthen service quality and operational
+            consistency.
+          </li>
+
+          <li>
+            Rolled out onboarding, SOP implementation, performance tracking,
+            and workforce-management initiatives while collaborating with
+            Customer Success, Warehouse, Logistics, and Operations teams.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- HEDGE -->
+
+    <div class="log-entry">
+
+      <div class="log-date mono">
+        FEB 2020 —<br>
+        APR 2023
+      </div>
+
+      <div>
+
+        <div class="log-role">
+          Programme Coordination &amp; Marketing
+        </div>
+
+        <div class="log-org">
+          Hedge Academy · Remote
+        </div>
+
+        <ul>
+
+          <li>
+            Coordinated training programmes, workshops, and learning events
+            involving students, trainers, industry experts, and external
+            partners, ensuring smooth programme delivery and stakeholder
+            satisfaction.
+          </li>
+
+          <li>
+            Managed stakeholder communications and participant engagement
+            for programmes serving 100–500 attendees.
+          </li>
+
+          <li>
+            Collaborated with internal teams and external organisations to
+            strengthen programme awareness, partnerships, and participant
+            experience.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- AGRITERRA -->
+
+    <div class="log-entry">
+
+      <div class="log-date mono">
+        SEP 2022 —<br>
+        JAN 2023
+      </div>
+
+      <div>
+
+        <div class="log-role">
+          Project Support &amp; Communications
+        </div>
+
+        <div class="log-org">
+          Agriterra Vietnam
+        </div>
+
+        <ul>
+
+          <li>
+            Coordinated stakeholder engagement between Vietnamese
+            agricultural cooperatives and Agriterra headquarters in the
+            Netherlands, facilitating communication across international
+            experts, cooperative partners, and local beneficiaries.
+          </li>
+
+          <li>
+            Contributed to an assessment report on maize and cassava value
+            chains in Vietnam's Central Highlands, supporting research,
+            documentation, and project coordination.
+          </li>
+
+          <li>
+            Supported a multi-stakeholder workshop involving Vietnam's
+            Ministry of Agriculture and De Heus, coordinating communication,
+            materials, logistics, and stakeholder engagement across
+            government, industry, and development partners.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- EARLY CAREER -->
+
+    <div class="log-entry">
+
+      <div class="log-date mono">
+        EARLIER<br>
+        EXPERIENCE
+      </div>
+
+      <div>
+
+        <div class="log-role">
+          Corporate Customer Relations · Business Development
+        </div>
+
+        <div class="log-org">
+          ACB — Asia Commercial Bank · Langmaster
+        </div>
+
+        <ul>
+
+          <li>
+            Earlier experience across corporate customer relations and
+            business development, building a foundation in client
+            communication, documentation, relationship management, and
+            commercial support.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECT PORTFOLIO
+========================================================= -->
+
+<section id="projects">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2>Project portfolio</h2>
+      <span class="tag mono">04 — Selected work</span>
+    </div>
+
+
+    <!-- FLAGSHIP -->
+
+    <div class="flagship">
+
+      <div class="flagship-head">
+
+        <div>
+
+          <span class="fs-eyebrow">
+            Flagship project · GIP AI Innovation Challenge 2026
+          </span>
+
+          <h3>
+            SHIELD — AI Agent for Logistics Dispute Resolution
+          </h3>
+
+          <p class="fs-sub">
+            “Smart Handler for Intelligent &amp; Efficient Logistics Disputes.”
+            Team Lead for an AI-enabled workflow designed to classify incoming
+            complaints, detect customer tone, identify the right owner, and
+            draft an SOP-compliant response.
+          </p>
+
+        </div>
+
+        <div class="flagship-award">
+          🏆 2nd Place — GIP AI Innovation Challenge 2026
+        </div>
+
+      </div>
+
+
+      <div class="flagship-body">
+
+        <div class="flagship-col">
+
+          <h4>The problem</h4>
+
+          <p>
+            Customer service teams handled 300+ complaint tickets per week
+            manually — reading, assessing severity, tracing SOPs, finding the
+            right department, and drafting responses. Each ticket could take
+            30–60 minutes, while roughly 23% were misrouted or missed each
+            week during peak periods.
+          </p>
+
+        </div>
+
+
+        <div class="flagship-col">
+
+          <h4>My role</h4>
+
+          <p>
+            Led the project team through problem scoping, SOP and SLA logic
+            definition, issue-category mapping, ownership rules, testing,
+            and live demonstration using real ticket cases.
+          </p>
+
+        </div>
+
+
+        <div class="flagship-metrics">
+
+          <div class="fm">
+            <span class="fm-v">88%</span>
+            <span class="fm-k">Faster processing</span>
+          </div>
+
+          <div class="fm">
+            <span class="fm-v">94%</span>
+            <span class="fm-k">Classification accuracy</span>
+          </div>
+
+          <div class="fm">
+            <span class="fm-v">&lt;30 min</span>
+            <span class="fm-k">Average response time</span>
+          </div>
+
+          <div class="fm">
+            <span class="fm-v">&lt;2%</span>
+            <span class="fm-k">Missed / misrouted</span>
+          </div>
+
+        </div>
+
+
+        <div class="flagship-col" style="grid-column:1/-1;">
+
+          <p style="margin-top:2px;">
+            Processing time dropped from 45 minutes to under 6 seconds per
+            ticket; classification accuracy increased from a 77% manual
+            baseline to 94%; average customer response time fell from
+            approximately 4 hours to under 30 minutes; and the team estimated
+            a 3x ROI within six months of rollout.
+          </p>
+
+        </div>
+
+
+        <div class="chip-row" style="grid-column:1/-1;">
+
+          <span class="chip">Project leadership</span>
+          <span class="chip">AI workflow</span>
+          <span class="chip">SOP &amp; SLA logic</span>
+          <span class="chip amber">Process improvement</span>
+          <span class="chip">Live demo</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filter-row mono" id="filterRow">
+
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="ops">Ops &amp; Process</button>
+      <button data-filter="data">Reporting &amp; Systems</button>
+      <button data-filter="coord">Coordination &amp; Comms</button>
+      <button data-filter="research">Research</button>
+
+    </div>
+
+
+    <!-- PROJECT CARDS -->
+
+    <div class="project-grid" id="projectGrid">
+
+
+      <div class="card" data-cat="data">
+
+        <div class="card-top">
+          <h3>Master Operations Dashboard</h3>
+          <span class="card-org mono">GIP Group</span>
+        </div>
+
+        <p>
+          Designed a leadership-facing dashboard consolidating warehouse
+          and customer-service KPIs into one view, improving visibility
+          across operational performance and recurring issues.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Dashboard / BI</span>
+          <span class="chip">Looker Studio</span>
+          <span class="chip">Leadership reporting</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="ops">
+
+        <div class="card-top">
+          <h3>B2B Account Tiering &amp; SLA Model</h3>
+          <span class="card-org mono">GIP Group</span>
+        </div>
+
+        <p>
+          Designed a four-tier account model — Diamond, Gold, Silver, Bronze —
+          based on monthly order volume to prioritize service resources across
+          200–300 active B2B accounts.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Process design</span>
+          <span class="chip amber">Account strategy</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="data">
+
+        <div class="card-top">
+          <h3>CRM / OMS / WMS Enhancement</h3>
+          <span class="card-org mono">GIP Group</span>
+        </div>
+
+        <p>
+          Partnered with the Technology team as the operations-side
+          stakeholder, translating customer-service and fulfillment
+          requirements into system-improvement inputs for environments
+          supporting 15,000–20,000 daily orders.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Cross-functional</span>
+          <span class="chip">Requirements gathering</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="ops">
+
+        <div class="card-top">
+          <h3>Inventory System Migration</h3>
+          <span class="card-org mono">GIP Group — Philippines</span>
+        </div>
+
+        <p>
+          Coordinated the migration of Philippines inventory management
+          from Google Sheets to the SSC system, planning the cutover to
+          minimize disruption to live fulfillment operations.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Migration planning</span>
+          <span class="chip">Change coordination</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="ops">
+
+        <div class="card-top">
+          <h3>B2B Support Automation</h3>
+          <span class="card-org mono">GIP Group</span>
+        </div>
+
+        <p>
+          Automated the B2B customer ticketing and complaint-logging workflow,
+          improving response tracking, ownership visibility, and
+          accountability across the support team.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Workflow automation</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="ops">
+
+        <div class="card-top">
+          <h3>SOP System &amp; Training Programme</h3>
+          <span class="card-org mono">GIP Group</span>
+        </div>
+
+        <p>
+          Built a six-dimension SOP model covering incident handling,
+          payment, and packaging workflows, and developed internal
+          onboarding material to standardize team practice.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Documentation</span>
+          <span class="chip amber">Training design</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="coord">
+
+        <div class="card-top">
+          <h3>Training Programme Coordination</h3>
+          <span class="card-org mono">Hedge Academy</span>
+        </div>
+
+        <p>
+          Coordinated training programmes, workshops, and learning events
+          end-to-end, managing scheduling, stakeholder communication,
+          logistics, and participant engagement for programmes serving
+          100–500 attendees.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Programme coordination</span>
+          <span class="chip">Stakeholder comms</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="research">
+
+        <div class="card-top">
+          <h3>Central Highlands Value Chain Assessment</h3>
+          <span class="card-org mono">Agriterra Vietnam</span>
+        </div>
+
+        <p>
+          Contributed to an assessment report examining opportunities and
+          challenges in Vietnam's maize and cassava value chains, supporting
+          research, project documentation, stakeholder engagement, and
+          coordination with Agriterra experts and international advisors.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Agricultural value chains</span>
+          <span class="chip">Research</span>
+          <span class="chip">Report writing</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="coord">
+
+        <div class="card-top">
+          <h3>Ministry of Agriculture Stakeholder Workshop</h3>
+          <span class="card-org mono">Agriterra Vietnam</span>
+        </div>
+
+        <p>
+          Supported a multi-stakeholder workshop involving Vietnam's
+          Ministry of Agriculture and De Heus, coordinating communication,
+          event materials, logistics, and stakeholder engagement across
+          government, industry, agricultural, and development stakeholders.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Government relations</span>
+          <span class="chip">Agriculture</span>
+          <span class="chip">Event coordination</span>
+        </div>
+
+      </div>
+
+
+      <div class="card" data-cat="research">
+
+        <div class="card-top">
+          <h3>Vietnam Rubber Exports under EVFTA</h3>
+          <span class="card-org mono">University research project</span>
+        </div>
+
+        <p>
+          University research project analysing Vietnam's natural rubber
+          exports to the European market under EVFTA implementation.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Trade research</span>
+          <span class="chip">EVFTA</span>
+          <span class="chip">International Economics</span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section id="skills">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2>Skills &amp; tools</h2>
+      <span class="tag mono">05 — Working toolkit</span>
+    </div>
+
+
+    <div class="skills-grid">
+
+
+      <div class="skill-block">
+
+        <h4>Project &amp; Coordination</h4>
+
+        <ul>
+          <li>Project &amp; task coordination</li>
+          <li>SOP &amp; process documentation</li>
+          <li>Cross-functional stakeholder management</li>
+          <li>Market launch &amp; expansion support</li>
+          <li>Vendor / 3PL coordination</li>
+          <li>Programme delivery</li>
+        </ul>
+
+      </div>
+
+
+      <div class="skill-block">
+
+        <h4>Reporting &amp; Systems</h4>
+
+        <ul>
+          <li>
+            Google Sheets
+            <span class="mono" style="font-size:11px;color:var(--ink-soft);">
+              QUERY / IMPORTRANGE
+            </span>
+          </li>
+
+          <li>Looker Studio</li>
+          <li>Odoo</li>
+          <li>POS Pancake</li>
+
+          <li>
+            MS Office
+            <span class="mono" style="font-size:11px;color:var(--ink-soft);">
+              MOS
+            </span>
+          </li>
+
+          <li>KPI reporting &amp; performance analysis</li>
+        </ul>
+
+      </div>
+
+
+      <div class="skill-block">
+
+        <h4>Leadership &amp; Communication</h4>
+
+        <ul>
+          <li>Team leadership — 8–30 staff</li>
+          <li>Cross-time-zone coordination</li>
+          <li>Partner relationship management</li>
+          <li>Business reviews &amp; presentations</li>
+          <li>Training material design</li>
+          <li>English — IELTS 6.5</li>
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section id="education">
+
+  <div class="wrap edu-grid">
+
+
+    <div>
+
+      <span class="section-head tag mono"
+            style="display:block; margin-bottom:18px;">
+        06 — Education
+      </span>
+
+      <div class="edu-card">
+
+        <h3>Bachelor's Degree in International Economics</h3>
+
+        <div class="meta">
+          National Economics University (NEU) · 2018–2022 · GPA 3.22/4
+        </div>
+
+        <p>
+          Excellent Educational Program (English-taught). Academic
+          foundation in international economics, trade, and cross-border
+          business. Leadership experience through university event
+          management and organising committees, including Head of Travel
+          &amp; Lifestyles Department at NEU BeU Club.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <span class="section-head tag mono"
+            style="display:block; margin-bottom:18px;">
+        Certifications &amp; recognition
+      </span>
+
+      <ul class="cert-list">
+
+        <li>
+          <span>IELTS Academic 6.5</span>
+          <span class="cn">Listening 7.0 · Speaking 7.0</span>
+        </li>
+
+        <li>
+          <span>Management for Middle Managers (MMM)</span>
+          <span class="cn">PTI · 2025</span>
+        </li>
+
+        <li>
+          <span>Microsoft Office Specialist (MOS)</span>
+          <span class="cn">Microsoft</span>
+        </li>
+
+        <li>
+          <span>Learning Data Analytics: Foundations</span>
+          <span class="cn">NASBA · 2023</span>
+        </li>
+
+        <li>
+          <span>2nd Prize Winner — GIP AI Innovation Challenge</span>
+          <span class="cn">GIP Group · 2026</span>
+        </li>
+
+        <li>
+          <span>Department of Dedication Award</span>
+          <span class="cn">GIP Group · 2025</span>
+        </li>
+
+        <li>
+          <span>Outstanding Employee of the Year</span>
+          <span class="cn">GIP Group · 2023</span>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact" class="contact">
+
+  <div class="wrap">
+
+    <span class="eyebrow mono">
+      07 — Contact
+    </span>
+
+    <h2>
+      Let's talk about how I can help coordinate your next project.
+    </h2>
+
+    <p class="contact-sub">
+      Open to Project Coordinator, Project Officer, Programme Coordinator,
+      PM support, Operations, and international development opportunities.
+    </p>
+
+
+    <div class="contact-grid">
+
+      <!-- CV -->
+      <a class="btn btn-solid"
+         href="./Ly_Nguyen_CV.pdf"
+         target="_blank"
+         rel="noopener">
+        View / Download CV (PDF)
+      </a>
+
+
+      <!-- EMAIL -->
+      <a class="btn btn-solid"
+         href="https://mail.google.com/mail/?view=cm&fs=1&to=lythnguyenx@gmail.com"
+         target="_blank"
+         rel="noopener">
+        Email me
+      </a>
+
+
+      <!-- ZALO -->
+      <a class="btn btn-ghost"
+         href="https://zalo.me/0376563909"
+         target="_blank"
+         rel="noopener">
+        Zalo — 0376 563 909
+      </a>
+
+
+      <!-- PRIMARY PHONE -->
+      <a class="btn btn-ghost"
+         href="tel:0376563909">
+        Call — 0376 563 909
+      </a>
+
+
+      <!-- SECONDARY PHONE -->
+      <a class="btn btn-ghost"
+         href="tel:0989338598">
+        Call — 0989 338 598
+      </a>
+
+
+      <!-- LINKEDIN -->
+      <a class="btn btn-ghost"
+         href="https://linkedin.com/in/lythnguyenx"
+         target="_blank"
+         rel="noopener">
+        LinkedIn ↗
+      </a>
+
+
+      <!-- COPY EMAIL -->
+      <button class="btn btn-ghost" id="copyEmailBtn">
+        Copy email
+      </button>
+
+    </div>
+
+
+    <div class="foot-row">
+      <span>
+        Thảo Ly Nguyễn — Hanoi, Vietnam
+      </span>
+
+      <span>
+        Built as a living CV — updated as new projects ship.
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div class="toast" id="toast">
+  Email copied to clipboard
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+  /* ---------- PROJECT FILTER ---------- */
+
+  const buttons = document.querySelectorAll('#filterRow button');
+  const cards = document.querySelectorAll('#projectGrid .card');
+
+  buttons.forEach(btn => {
+
+    btn.addEventListener('click', () => {
+
+      buttons.forEach(b => b.classList.remove('active'));
+
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      cards.forEach(card => {
+
+        card.style.display =
+          (filter === 'all' || card.dataset.cat === filter)
+          ? ''
+          : 'none';
+
+      });
+
+    });
+
+  });
+
+
+  /* ---------- COPY EMAIL ---------- */
+
+  const copyBtn = document.getElementById('copyEmailBtn');
+  const toast = document.getElementById('toast');
+
+  copyBtn.addEventListener('click', async () => {
+
+    try {
+
+      await navigator.clipboard.writeText('lythnguyenx@gmail.com');
+
+      toast.classList.add('show');
+
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 1800);
+
+    } catch (err) {
+
+      window.prompt(
+        'Copy this email:',
+        'lythnguyenx@gmail.com'
+      );
+
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
